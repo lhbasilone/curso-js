@@ -1,0 +1,40 @@
+
+.deliv-body{
+    margin-top: 180px;
+    margin-bottom: 180px;
+    background-color: rgba(0, 0, 0, 0.767);
+
+
+    h2{
+        @extend .font_yellow;
+        font-size: 6.50em;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    
+    p{
+        @extend .font_yellow;
+        font-size: 1.4em;
+    }
+
+
+    
+
+    h4{
+        @extend .font_yellow;
+        font-size: 3.5em;
+        margin-top: 25px;
+        padding-bottom: 10px
+    }
+    
+
+    span{
+        @extend .font_yellow;
+        font-size: 1.2em;
+        padding-top: 3px;
+    }
+
+    
+    }
+    

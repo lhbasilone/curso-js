@@ -1,0 +1,175 @@
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #000;
+}
+
+
+.navbar {
+    background: rgba(0, 0, 0, 0.918);
+}
+
+.nav-link {
+    border-color: $color1 !important;
+}
+
+
+
+nav a {
+    padding-left: 100px;
+}
+
+nav ul {
+    padding-right: 150px;
+
+
+li a {
+    color: $color1 !important;
+    font-family: $font1;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+}
+
+
+button span {
+    color: $color1;
+    font-size: 25px;
+}
+
+ul li :hover {
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+.view {
+    height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slogan_ppal {
+@extend .font_yellow;
+}
+
+
+
+.hace_pedido {
+    color: #ffffff;
+    padding-top: 1.87em;
+    text-decoration: none;
+}
+
+.hace_pedido:hover {
+    color: #666;
+}
+
+.caja_amarilla {
+    @include box_size (100%, 50vh, $color1);
+}
+
+.welcome_text {
+    @extend .font_black;
+    text-align: center;
+    font-size: 6.25em;
+
+}
+
+.icons_welcome a i {
+    font-size: 3.125em;
+    text-align: center;
+    padding: 10px;
+    color: $color2;
+}
+
+.icons_welcome a i:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+.fondo-nosotros {
+    background-color: #000;
+}
+
+
+.somos-club {
+    @extend .font_yellow;
+    text-align: center;
+    font-size: 2em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.carrusel {
+    padding-right: 3.125em;
+    padding-left: 3.125em;
+}
+
+
+.contacto_index {
+    @include box_size(100%, 300px, #ffbb009f );
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+
+}
+
+
+
+.trab_1 {
+    @extend .font_black;
+    font-size: 60px;
+    text-align: center;
+
+}
+
+.contacto_index p a {
+    text-decoration: none;
+    color: $color2;
+}
+
+.contacto_index p:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+
+footer {
+    background-color: $color2;
+    position: sticky;
+
+
+h2 {
+    font-size: 3.75em;
+    font-family: $font1;
+    text-align: center;
+    color: $color1;
+}
+}
+
+
+footer ul {
+    @extend .font_yellow;
+    list-style: none;
+    font-size: 1.25em;
+    text-align: center;
+}  
+
+
+
+.footer-copyright {
+    @extend .font_yellow;
+    background-color: rgb(8, 8, 8);
+    font-size: 1.25em;
+    text-decoration: none;
+
+}
+
+.footer-copyright a {
+    text-decoration: dotted;
+    color: #775a09;
+}

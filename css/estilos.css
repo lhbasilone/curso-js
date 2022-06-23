@@ -1,0 +1,554 @@
+.font_yellow, .slogan_ppal, .la-galeria, .somos-club, footer ul, .footer-copyright, .deliv-body h2, .deliv-body p, .deliv-body h4, .deliv-body span {
+  font-family: "Bebas Neue";
+  color: #FFBA00;
+}
+
+.font_black, .welcome_text, .trab_1, .card-title {
+  font-family: "Bebas Neue";
+  color: #000;
+}
+
+.maps--f-ppal1 {
+  font-size: 5.5em;
+}
+
+.maps--f-ppal2 {
+  font-size: 3.75em;
+}
+
+.maps--f-ppal3 {
+  font-size: 1.875em;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #000;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.918);
+}
+
+.nav-link {
+  border-color: #FFBA00 !important;
+}
+
+nav a {
+  padding-left: 100px;
+}
+
+nav ul {
+  padding-right: 150px;
+}
+
+nav ul li a {
+  color: #FFBA00 !important;
+  font-family: "Bebas Neue";
+  text-decoration: none;
+  font-size: 2em;
+}
+
+button span {
+  color: #FFBA00;
+  font-size: 25px;
+}
+
+ul li :hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.view {
+  height: 100vh;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hace_pedido {
+  color: #ffffff;
+  padding-top: 1.87em;
+  text-decoration: none;
+}
+
+.hace_pedido:hover {
+  color: #666;
+}
+
+.caja_amarilla {
+  height: 50vh;
+  width: 100%;
+  background-color: #FFBA00;
+}
+
+.welcome_text {
+  text-align: center;
+  font-size: 6.25em;
+}
+
+.icons_welcome a i {
+  font-size: 3.125em;
+  text-align: center;
+  padding: 10px;
+  color: #000;
+}
+
+.icons_welcome a i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.fondo-nosotros {
+  background-color: #000;
+}
+
+.somos-club {
+  text-align: center;
+  font-size: 2em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.carrusel {
+  padding-right: 3.125em;
+  padding-left: 3.125em;
+}
+
+.contacto_index {
+  height: 300px;
+  width: 100%;
+  background-color: #ffbb009f;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.trab_1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.contacto_index p a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contacto_index p:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+footer {
+  background-color: #000;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+footer h2 {
+  font-size: 3.75em;
+  font-family: "Bebas Neue";
+  text-align: center;
+  color: #FFBA00;
+}
+
+footer ul {
+  list-style: none;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.footer-copyright {
+  background-color: #080808;
+  font-size: 1.25em;
+  text-decoration: none;
+}
+
+.footer-copyright a {
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+  color: #775a09;
+}
+
+/* COMBOS */
+.body-galeria {
+  background-color: #181200;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
+  background-repeat: repeat;
+  -webkit-animation: bg-animation .2s infinite;
+          animation: bg-animation .2s infinite;
+  opacity: .9;
+  visibility: visible;
+}
+
+@-webkit-keyframes bg-animation {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  10% {
+    -webkit-transform: translate(-5%, -5%);
+            transform: translate(-5%, -5%);
+  }
+  20% {
+    -webkit-transform: translate(-10%, 5%);
+            transform: translate(-10%, 5%);
+  }
+  30% {
+    -webkit-transform: translate(5%, -10%);
+            transform: translate(5%, -10%);
+  }
+  40% {
+    -webkit-transform: translate(-5%, 15%);
+            transform: translate(-5%, 15%);
+  }
+  50% {
+    -webkit-transform: translate(-10%, 5%);
+            transform: translate(-10%, 5%);
+  }
+  60% {
+    -webkit-transform: translate(15%, 0);
+            transform: translate(15%, 0);
+  }
+  70% {
+    -webkit-transform: translate(0, 10%);
+            transform: translate(0, 10%);
+  }
+  80% {
+    -webkit-transform: translate(-15%, 0);
+            transform: translate(-15%, 0);
+  }
+  90% {
+    -webkit-transform: translate(10%, 5%);
+            transform: translate(10%, 5%);
+  }
+  100% {
+    -webkit-transform: translate(5%, 0);
+            transform: translate(5%, 0);
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  10% {
+    -webkit-transform: translate(-5%, -5%);
+            transform: translate(-5%, -5%);
+  }
+  20% {
+    -webkit-transform: translate(-10%, 5%);
+            transform: translate(-10%, 5%);
+  }
+  30% {
+    -webkit-transform: translate(5%, -10%);
+            transform: translate(5%, -10%);
+  }
+  40% {
+    -webkit-transform: translate(-5%, 15%);
+            transform: translate(-5%, 15%);
+  }
+  50% {
+    -webkit-transform: translate(-10%, 5%);
+            transform: translate(-10%, 5%);
+  }
+  60% {
+    -webkit-transform: translate(15%, 0);
+            transform: translate(15%, 0);
+  }
+  70% {
+    -webkit-transform: translate(0, 10%);
+            transform: translate(0, 10%);
+  }
+  80% {
+    -webkit-transform: translate(-15%, 0);
+            transform: translate(-15%, 0);
+  }
+  90% {
+    -webkit-transform: translate(10%, 5%);
+            transform: translate(10%, 5%);
+  }
+  100% {
+    -webkit-transform: translate(5%, 0);
+            transform: translate(5%, 0);
+  }
+}
+
+.la-galeria {
+  margin-top: 150px;
+  color: #FFBA00;
+  text-transform: uppercase;
+  font-size: 6em;
+}
+
+.cards-galeria {
+  margin-bottom: 2em;
+}
+
+.card {
+  background-image: url(../img/back-card-galeria.svg);
+  background-size: cover;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(255, 255, 255, 0.301);
+          box-shadow: 0 12px 16px rgba(255, 255, 255, 0.301);
+}
+
+.card-title {
+  font-size: 2em;
+}
+
+.card-text {
+  font-size: 1.1em;
+  font-family: "Bebas Neue";
+}
+
+.text-muted {
+  color: white !important;
+}
+
+.borde_contact {
+  margin-top: 9.5em;
+  border-color: aliceblue;
+  border: solid;
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  color: #FFBA00;
+}
+
+.form-control {
+  background-color: #FFBA00;
+}
+
+.boton-contacto {
+  background-color: #FFBA00 !important;
+}
+
+.deliv-body {
+  margin-top: 180px;
+  margin-bottom: 180px;
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+.deliv-body h2 {
+  font-size: 6.50em;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.deliv-body p {
+  font-size: 1.4em;
+}
+
+.deliv-body h4 {
+  font-size: 3.5em;
+  margin-top: 25px;
+  padding-bottom: 10px;
+}
+
+.deliv-body span {
+  font-size: 1.2em;
+  padding-top: 3px;
+}
+
+@media screen and (max-width: 767px) {
+  nav ul {
+    padding-right: 10px;
+  }
+  .logo {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .slogan {
+    font-size: 4em;
+  }
+  .solo_merlo {
+    font-size: 2.25em;
+  }
+  .hace_pedido {
+    font-size: 1.25em;
+  }
+  .welcome_text {
+    font-size: 4em;
+  }
+  .caja_amarilla {
+    width: 100%;
+    height: 25vh;
+  }
+  .somos-club {
+    font-size: 1.5em;
+  }
+  .contacto_index {
+    height: 150px;
+  }
+  .trab_1 {
+    font-size: 2.5em;
+  }
+  footer h2 {
+    font-size: 2.5em;
+  }
+  footer ul {
+    font-size: 1em;
+  }
+  .footer-copyright {
+    font-size: 1em;
+  }
+  /* galeria */
+  .la-galeria {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .slogan {
+    font-size: 3.5em;
+  }
+  .solo_merlo {
+    font-size: 2em;
+  }
+  .hace_pedido {
+    font-size: 1.25em;
+  }
+  .welcome_text {
+    font-size: 3.2em;
+  }
+  .icons_welcome a i {
+    font-size: 2.5em;
+  }
+  /* galeria */
+  .la-galeria {
+    font-size: 3.5em;
+  }
+}
+
+.title-staff {
+  font-family: "Bebas Neue";
+  color: #FFBA00;
+  font-size: 6.5em;
+  margin-top: 150px;
+}
+
+.box-staff {
+  background-color: #000000;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  border-radius: 50px;
+}
+
+.box-staff h4 {
+  font-family: "Bebas Neue";
+  color: #FFBA00;
+}
+
+.profile-card-2 {
+  max-width: 300px;
+  -webkit-box-shadow: 0px 0px 25px rgba(240, 240, 240, 0.377);
+          box-shadow: 0px 0px 25px rgba(240, 240, 240, 0.377);
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.profile-card-2 img {
+  -webkit-transition: all linear 0.25s;
+  transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-name {
+  position: absolute;
+  left: 30px;
+  font-family: "Bebas Neue";
+  color: #FFBA00;
+  bottom: 70px;
+  font-size: 30px;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  -webkit-transition: all linear 0.25s;
+  transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: all linear 0.25s;
+  transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-username {
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+  font-family: "Bebas Neue";
+  color: #FFBA00;
+  font-size: 13px;
+  -webkit-transition: all linear 0.25s;
+  transition: all linear 0.25s;
+}
+
+.profile-card-2:hover img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.profile-card-2:hover .profile-name {
+  bottom: 80px;
+}
+
+.profile-card-2:hover .profile-username {
+  bottom: 60px;
+}
+
+.profile-card-2:hover .profile-icons {
+  right: 40px;
+}
+
+i {
+  text-decoration: none;
+  font-family: "Bebas Neue";
+  color: #FFBA00;
+  padding-left: 8px;
+}
+/*# sourceMappingURL=estilos.css.map */

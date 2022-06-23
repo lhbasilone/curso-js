@@ -1,0 +1,102 @@
+@media screen and (max-width:767px) {
+    nav ul {
+        padding-right: 10px;
+    }
+
+    .logo {
+        padding-left: 20px;
+    }
+
+}
+
+@media screen and (max-width:660px) {
+
+
+    .slogan {
+        font-size: 4em;
+    }
+
+    .solo_merlo {
+        font-size: 2.25em;
+    }
+
+
+    .hace_pedido {
+        font-size: 1.25em;
+    }
+
+    .welcome_text {
+        font-size: 4em;
+    }
+
+
+    .caja_amarilla {
+        width: 100%;
+        height: 25vh;
+    }
+
+    .somos-club {
+        font-size: 1.5em;
+    }
+
+
+    .contacto_index {
+        height: 150px;
+    }
+
+    .trab_1 {
+        font-size: 2.5em;
+    }
+
+
+    footer h2 {
+        font-size: 2.5em;
+    }
+
+    footer ul {
+        font-size: 1em;
+    }
+
+    .footer-copyright {
+        font-size: 1em;
+    }
+
+    /* galeria */
+    .la-galeria {
+        font-size: 4em;
+    }
+
+
+}
+
+
+@media screen and (max-width:440px) {
+
+
+    .slogan {
+        font-size: 3.5em;
+    }
+
+    .solo_merlo {
+        font-size: 2em;
+    }
+
+
+    .hace_pedido {
+        font-size: 1.25em;
+    }
+
+    .welcome_text {
+        font-size: 3.2em;
+    }
+
+    .icons_welcome a i {
+        font-size: 2.5em;
+    }
+
+
+    /* galeria */
+    .la-galeria {
+        font-size: 3.5em;
+    }
+}
