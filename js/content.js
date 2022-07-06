@@ -1,124 +1,149 @@
-function solicName() {
-    alert("Bienvenido a EL CLUB DEL BAJON");
-    let nombre = prompt('Ingrese su nombre');
-    while (nombre === '') {
-        nombre = prompt('Ingrese su nombre');
+class Producto {
+    constructor (nombre, precio){
+        this.nombre = nombre;
+        this.precio = parseInt (precio);
     }
-    alert("hora de saciar el hambre " + nombre.toUpperCase())
-
-    return nombre;
 }
 
-//list1
+const burguerClub = new Producto("burguer club", 745);
+const cuatroQuesos = new Producto("cuatro quesos", 665);
+const delizia = new Producto("delizia", 765);
+const xxl = new Producto("xxl", 810);
+const gorgonzola = new Producto("gorgonzola", 755);
+let totalProductos = 0
+let carrito = [];
+let listaCompras = [];
 
-function listProduct(){
-    let producto;
-    do {    
-    producto = parseInt(prompt("Introduci el numero de tu bajon! : \n 1) Burguer club\n 2) Cuatro quesos\n 3) Delizia\n 4) XXL\n 5)Gorgonzola "))
-} while (producto < 1 || producto > 5);
-switch (producto) {
-    case 1:
-        return 'Burguer club';
-    case 2:
-        return 'Cuatro quesos';
-    case 3:
-        return 'Delizia';
-    case 4:
-        return 'XXL';
-    case 5:
-        return 'Gorgonzola';
+function suma(numeroUno, numeroDos) {
+    let resultado = numeroUno + numeroDos;
+    return resultado;
+}
+
+function resta(numeroUno, numeroDos) {
+    let resultado = numeroUno - numeroDos;
+    return resultado;
+}
+
+function multiplicacion(numeroUno, numeroDos) {
+    let resultado = numeroUno * numeroDos;
+    return resultado;
+}
+
+function usuario(){
+    nombreUsuario = prompt("Ingrese su nombre por favor")
+    while (nombreUsuario === "") {
+        nombreUsuario = prompt("Ingrese su nombre por favor")
     }
+}
+
+function menu() {
+    let opcion = 0;
+    
+    do{
+        opcion = parseInt(prompt("Bienvenido " + nombreUsuario + ", seleccione una opcion para continuar. (ESC para salir)\nEn el carrito hay actualmente " + carrito.length + " Productos.\n 1.Agregar productos al carrito\n 2.Pagar el total de la compra\n 3.Reiniciar carrito\n 4.Mostrar productos dentro del carrito"));
+    
+    switch (opcion) {
+        case 1:
+            agregarProducto()
+            return menu()
+        case 2:
+            metodoPago()
+            return mostrarTotal(totalProductos)
+        case 3:
+            reinicioCarrito()
+            return menu()
+        case 4:
+            revisarCarrito()
+            return menu()
+        default: 
+            alert("seleccione una opcion valida!!")
+            
+        } 
+    } while (opcion !== "") 
+}
+
+function agregarProducto() {
+    let seleccionarProducto = 0
+    do {
+        seleccionarProducto = parseInt(prompt("Seleccione el menu que desea agregar al carrito.\n su total hasta ahora es $" + totalProductos + "\n Actualmente hay " + carrito.length + " productos en el carrito.\n 1.burguer club $745\n 2.Cuatro quesos $665\n 3.Delizia $765\n 4. XXL\n 5. gorgonzola\n 0.Volver al menu anterior." ));
+
+        if (seleccionarProducto === 1) {
+            totalProductos = suma(totalProductos, burguerClub.precio)
+            listaCompras.push(burguerClub)
+            carrito.push ( burguerClub.nombre + ' $' + burguerClub.precio )
+        }if (seleccionarProducto === 2) {
+            totalProductos = suma(totalProductos, cuatroQuesos.precio)
+            listaCompras.push(cuatroQuesos)
+            carrito.push (cuatroQuesos.nombre + ' $' + cuatroQuesos.precio)
+        }if (seleccionarProducto === 3) {
+            totalProductos = suma(totalProductos, delizia.precio)
+            listaCompras.push(delizia)
+            carrito.push(delizia.nombre + ' $' + delizia.precio)
+        }if (seleccionarProducto === 4) {
+            totalProductos = suma(totalProductos, xxl.precio)
+            listaCompras.push(xxl)
+            carrito.push (xxl.nombre + ' $' + xxl.precio)
+        }if (seleccionarProducto === 5) {
+            totalProductos = suma(totalProductos, gorgonzola.precio)
+            listaCompras.push(gorgonzola)
+            carrito.push (gorgonzola.nombre + ' $' + gorgonzola.precio)
+        }if (seleccionarProducto >= 6) {
+            alert("Seleccione por favor una opcion valida")
+        }
+
+    }while (seleccionarProducto !== 0)
+
+}
+
+function mostrarTotal(resultado) {
+    alert("El total a pagar es: $" + resultado + "\n !!muchas gracias por su compra!!");
     
 }
 
-//valor
+function metodoPago() {
+    let transferencia = totalProductos
+    let efectivo = totalProductos * 0.90
+    let credito = totalProductos * 1.15
+    let metodoPago = 0
 
-function precioProduct(nombre) {
+        metodoPago = parseInt(prompt("El total en el carrito es de: $" + totalProductos + "\nComo desea pagarlo?\n 1.Efectivo\n 2.Transferencia\n 3.Tarjeta de credito"));
+        if (metodoPago === 1) {
+            alert("Se ha aplicado un descuento del 10%");
+            totalProductos = efectivo;
 
-    if (nombre === 'burguer club') {
-        return 745;
-    }else if (nombre === 'Cuatro quesos') {
-        return 665; 
-    }else if (nombre === 'Delizia') {
-        return 765; 
-    }else if (nombre === 'XXL') {
-        return 810;
-    } else {
-        return 755; 
-    }
+        }if (metodoPago === 2) {
+            totalProductos = transferencia;
+
+        }if (metodoPago === 3) {
+            alert("Se ha aplicado un recargo del 15%");
+            totalProductos = credito;
+
+        }if (metodoPago >= 4) {
+            alert("Seleccione una opcion valida")
+            
+        }
+}
+function reinicioCarrito() {
+    alert("Se han eliminado todos los productos del carrito")
+    totalProductos = multiplicacion(totalProductos, 0);
+    carrito = []
+    listaCompras = []
 }
 
-//monto1
+function revisarCarrito() {
 
-function primerCobro(producto,precio,nombre) {
-    alert(
-        nombre.toUpperCase() +
-        ' elegiste : ' +
-        producto +
-        ' Tiene un costo de $ ' +
-        precio + ' pesos');
-        
-} 
-
-//list2
-
-
-function secondlistProduct() {
-    alert(
-        "El combo viene con papas!");
-    let agregados;
-    do {    
-     agregados = parseInt(prompt('Deseas agregar una coca? : \n1) SI\n 2) NO'))
-} while (agregados < 1 || agregados > 2);
-switch (agregados) {
-    case 1:
-        return 'SI';
-    case 2:
-        return "NO";
-    }
+    alert ("Los productos en su carrito son:\n" + carrito.join("\n") + "\n Total a pagar: $" + totalProductos)
 }
 
-//valor2
-
-function precioSecondlist(nombre2) {
-     if (nombre2 === 'SI') {
-        return 250;
-    } else {
-        return 0; 
-    }
+function listaFiltrada() {
+    const relojes = listaCompras.filter((listaCompras) => listaCompras.nombre.includes('burguer club'))
+    const baratos = listaCompras.filter((listaCompras) => listaCompras.precio < 750)
+    console.log("burguer club vendidas")
+    console.log(burguerClub)
+    console.log("combos baratos")
+    console.log(baratos)
 }
- 
-//monto_final
 
-function segundoCobro(producto2,precio2,nombre) {
-    alert(
-        nombre.toUpperCase() +
-        ', agregaste : ' +
-        producto2 +
-        ' por lo tanto cuesta $ ' +
-        precio2 + ' pesos');
-    
-    let cash = parseInt(prompt('ingresa el monto $ :'))
-    if (cash > precio) {
-        alert(nombre + " tu vuelto es " + (cash - (precio + precio2)));
-    } else if (cash < precio) {
-        alert('NO TE ALCANZA')
-        cash = parseInt(prompt('ingrese monto $ :'))
-        alert(nombre + " tu vuelto es " + (cash - (precio + precio2)));
-    } 
-    alert('Que tengas un buen bajon!');
-    }
-
-
-//variables
-
-let nomCliente = solicName();
-let nomProducto = listProduct();
-let precio = precioProduct(nomProducto);
-
-primerCobro(nomProducto, precio, nomCliente);
-
-let agregado = secondlistProduct();
-let precio2 = precioSecondlist(agregado);
-
-segundoCobro(agregado, precio2, nomCliente);
+usuario()
+menu()
+listaFiltrada()
